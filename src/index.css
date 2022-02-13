@@ -1,0 +1,96 @@
+:root {
+  --navy-blue: #03045eff;
+  --dark-cornflower-blue: #023e8aff;
+  --star-command-blue: #0077b6ff;
+  --blue-green: #0096c7ff;
+  --cerulean-crayola: #00b4d8ff;
+  --sky-blue-crayola: #48cae4ff;
+  --sky-blue-crayola-2: #90e0efff;
+  --blizzard-blue: #ade8f4ff;
+  --powder-blue: #caf0f8ff;
+  --border-radius: 10px;
+  scroll-behavior: smooth;
+}
+/* https://coolors.co/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8 colour palette*/
+
+* {
+  color: var(--navy-blue);
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  /* margin: 0; */
+  /* Add this in or out - Looks a bit nicer with Margins */
+  border-color: var(--star-command-blue);
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  margin: 0;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  /* Remove above 3 lines if not keen on sticky */
+  box-sizing: content-box;
+  height: auto;
+  /* auto so when the page resizes the header and nav links dont go out of flow */
+  width: 100%;
+  background-color: var(--star-command-blue);
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0px;
+  /* add a gradient colour */
+}
+
+header h1 {
+  max-height: 70px;
+  font-size: 2.5rem;
+  color: var(--dark-cornflower-blue);
+  justify-content: space-between;
+  background-color: var(--sky-blue-crayola);
+  padding: 0.5rem;
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  text-align: center;
+  align-self: center;
+}
+
+header nav ul li {
+  display: inline-flex;
+  text-align: right;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-content: center;
+  width: 33vw;
+}
+
+#nav-link {
+  margin: 0.25rem;
+  min-height: 2rem;
+  padding: 1rem;
+  background-color: var(--navy-blue);
+  border-radius: var(--border-radius);
+}
+
+#nav-link a {
+  color: var(--powder-blue);
+  text-decoration: none;
+}
+
+#nav-link:hover {
+  background-color: white;
+  opacity: 0.5;
+}
+
+#nav-link:hover a {
+  color: black;
+}
