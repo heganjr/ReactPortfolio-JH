@@ -94,3 +94,36 @@ nav {
 #nav-link:hover a {
   color: black;
 }
+
+.background-image {
+  position: relative;
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+#text-experience {
+  position: absolute;
+  color: var(--navy-blue);
+  font-style: italic;
+  font-weight: bolder;
+  right: 180px;
+}
+
+#text-experience p {
+  text-decoration: underline;
+}
+
+.personal-image {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-bottom-left-radius: var(--border-radius);
+  border-style: none solid solid solid;
+  box-sizing: content-box;
+  padding: 0.5rem;
+}
